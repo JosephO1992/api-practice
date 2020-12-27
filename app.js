@@ -6,6 +6,7 @@ const searchTitle = document.querySelector('#title');
 const searchYear = document.querySelector('#year');
 const searchActors = document.querySelector('#actors');
 const searchImg = document.querySelector('#searchImg');
+const card = document.querySelector('#card');
 
 
 // We are only going to search by title for now to keep it simple, therefore need to amend our api req with t at the end. 
@@ -30,6 +31,7 @@ async function myFetch() {
       searchYear.innerHTML = resData.Year;
       searchActors.innerHTML = resData.Actors;
       searchImg.src = resData.Poster;
+      card.style.display = "block";
       searchInput.value = "";
       
     }

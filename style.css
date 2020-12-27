@@ -27,3 +27,7 @@ header {
   font-size: 1.5rem;
   margin-left: 40px;
 }
+
+#card {
+  display: none;
+}
